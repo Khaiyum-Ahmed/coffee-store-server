@@ -7,8 +7,8 @@ const port = process.env.PORT || 5000;
 
 
 //  middleware
-// app.use(cors({origin:["https://coffee-store-client-mauve.vercel.app","http://localhost:5173"],credentials:true,allowedHeaders:["Content-Type","Authorization"],methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]}));
-app.use(cors());
+app.use(cors({origin:["https://coffee-store-client-mauve.vercel.app","http://localhost:5173"],credentials:true,allowedHeaders:["Content-Type","Authorization"],methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]}));
+// app.use(cors());
 app.use(express.json());
 
 
